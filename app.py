@@ -5,11 +5,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 import os
-from dotenv import load_dotenv
 
-load_dotenv()  # Load from .env file
 
-tmdb_key = os.getenv("TMDB_API_KEY")
+api_key = st.secrets["TMDB_API_KEY"]
 
 
 # ------------------ FETCH POSTER ------------------ #
