@@ -13,7 +13,7 @@ api_key = st.secrets["TMDB_API_KEY"]
 # ------------------ FETCH POSTER ------------------ #
 
 def fetch_poster(movie_id):
-    url = f'https://api.themoviedb.org/3/movie/{movie_id}?api_key={tmdb_key}&language=en-US'
+    url = f'https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}&language=en-US'
     response = requests.get(url)
 
     if response.status_code != 200:
